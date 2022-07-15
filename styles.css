@@ -49,6 +49,13 @@ html {
   justify-content: space-around;
 }
 
+.fondoTextoTransparente {
+  height: 2.5rem;
+  width: 2rem;
+  background-color: rgba(179, 179, 179, 0.2078431373);
+  border-radius: 3px;
+}
+
 /*Media Querys---------------------------------(768px)*/
 @media screen and (max-width: 767px) {
   .logo {
@@ -113,9 +120,9 @@ html {
 }
 /*----------------------------------------------------*/
 .navbar {
-  --bs-navbar-hover-color: rgb(247 91 4);
-  --bs-navbar-brand-hover-color: rgb(247 91 4);
-  --bs-navbar-toggler-border-color: rgb(247 91 4);
+  --bs-navbar-hover-color: #FF5E00;
+  --bs-navbar-brand-hover-color: #FF5E00;
+  --bs-navbar-toggler-border-color: #ff8a31;
 }
 
 .nav-link {
@@ -127,7 +134,7 @@ html {
 }
 
 .navbar-toggler {
-  color: #ff8a31;
+  color: #ff581b;
 }
 
 .padding-navbar {
@@ -150,10 +157,7 @@ main .paragraph {
   width: auto;
 }
 main label {
-  color: #ff994a;
   display: flex;
 }
 
-/*Stops nesting style*/
-
-/*# sourceMappingURL=styles.css.map */
+/*Stops nesting style*//*# sourceMappingURL=styles.css.map */

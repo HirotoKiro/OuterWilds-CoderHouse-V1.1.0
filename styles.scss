@@ -1,3 +1,12 @@
+$naranja: #ff8a31;
+$naranjaRojo: #ff581b;
+$grisTransparente: #b3b3b335;
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
 *{
     margin: 0;
     padding: 0; 
@@ -47,6 +56,12 @@ html {
 .container-iframe {
     display: flex;
     justify-content: space-around;
+}
+
+.fondoTextoTransparente {
+    @include sizes(2rem,2.5rem);
+    background-color: $grisTransparente;
+    border-radius: 3px;
 }
 
 /*Media Querys---------------------------------(768px)*/
@@ -128,20 +143,21 @@ html {
 /*----------------------------------------------------*/
 
 .navbar {
-    --bs-navbar-hover-color: rgb(247 91 4);
-    --bs-navbar-brand-hover-color: rgb(247 91 4);
-    --bs-navbar-toggler-border-color: rgb(247 91 4);
+    --bs-navbar-hover-color: #FF5E00;
+    --bs-navbar-brand-hover-color: #FF5E00;
+    --bs-navbar-toggler-border-color: #ff8a31;
 }
 
 .nav-link {
-    color: #ff8a31;
+    color: $naranja;
 }
+
 .navbar-brand {
-    color: #ff8a31;
+    color: $naranja;
 }
 
 .navbar-toggler {
-    color: #ff8a31;
+    color: $naranjaRojo;
 }
 
 .padding-navbar {
@@ -152,7 +168,7 @@ html {
 
 /*Nesting style SCSS*/
 
-main {color:#ff8a31;
+main {color:$naranja;
 
     .paragraph-title{
         margin: 20px;
@@ -166,11 +182,8 @@ main {color:#ff8a31;
     }
 
     label{
-        color:#ff994a;
         display: flex;
     }
 }
 
 /*Stops nesting style*/
-
-
