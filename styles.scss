@@ -1,10 +1,27 @@
 $naranja: #ff8a31;
 $naranjaRojo: #ff581b;
 $grisTransparente: #b3b3b335;
+$blanco: #ffffff;
 
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;
+}
+
+%botones {
+    list-style: none;
+    background: $blanco;
+    border: 1px solid $naranja;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+    color: $naranjaRojo;
+    transition: all 1s;
+
+    &:hover{
+        transform: scale(1.1);
+        color: $naranjaRojo;
+    }
 }
 
 *{
@@ -15,6 +32,10 @@ $grisTransparente: #b3b3b335;
 
 html {
     height: 100%;
+}
+
+.botones {
+    @extend %botones
 }
 
 .header {

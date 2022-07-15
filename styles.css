@@ -1,3 +1,18 @@
+.botones {
+  list-style: none;
+  background: #ffffff;
+  border: 1px solid #ff8a31;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+  color: #ff581b;
+  transition: all 1s;
+}
+.botones:hover {
+  transform: scale(1.1);
+  color: #ff581b;
+}
+
 * {
   margin: 0;
   padding: 0;
